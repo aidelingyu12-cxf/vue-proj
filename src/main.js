@@ -3,9 +3,9 @@ import App from '@/App'
 
 import '@/element-ui'
 import '@/element-ui-theme'
-
-Vue.config.productionTip = false
-
+import http from '@/utils/httpRequest'
+import './mock/index'
+Vue.prototype.$http = http
 
 /* eslint-disable no-new */
 new Vue({
