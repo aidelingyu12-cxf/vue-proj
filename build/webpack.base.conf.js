@@ -97,7 +97,6 @@ module.exports = {
   },
   // 引入外部库, 无需webpack打包处理
   externals: {
-    mockjs: 'Mock',
     echarts: 'echarts',
     ueditor: 'UE'
   }

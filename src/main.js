@@ -4,7 +4,8 @@ import App from '@/App'
 import '@/element-ui'
 import '@/element-ui-theme'
 import http from '@/utils/httpRequest'
-import './mock/index'
+import '@/mock'
+import '../static/config'
 Vue.prototype.$http = http
 
 /* eslint-disable no-new */

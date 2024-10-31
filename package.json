@@ -24,6 +24,7 @@
     "gulp-shell": "0.8.0",
     "json-bigint": "^1.0.0",
     "lodash": "4.17.5",
+    "mockjs": "^1.1.0",
     "npm": "^6.9.0",
     "sass-loader": "7.3.1",
     "svg-sprite-loader": "3.7.3",

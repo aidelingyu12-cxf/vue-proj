@@ -53,7 +53,7 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           this.$http({
-            url: '',
+            url: '/api/users/login',
             method: 'post',
             data: {
               'username': this.ruleForm.username,
@@ -61,7 +61,7 @@ export default {
             }
           }).then(({data}) => {
             if(data && data.code == 0){
-              window.alert('test1');
+              window.alert(data);
             }else{
               window.alert('test2');
             }
