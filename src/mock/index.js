@@ -1,9 +1,12 @@
-import Mock from "mockjs";
-// 引入模板函数类
-import login from "./modules/login";
-
-const { mock } = Mock; // Mock函数
-window.alert('sss');
-// 使用拦截规则拦截命中的请求
-// mock( url, post/get, 返回的数据/函数（有return值）);
-mock("/api/users/login", "post", login.login);
+ //index.js
+ // 引入: mockjs 模块;
+ import Mock from 'mockjs'
+ // 设置拦截Ajax请求的响应时间，模拟网络延迟
+ Mock.setup({
+     timeout:'200-600'
+ })
+ Mock.mock('/api/users/login', {
+     code: "0",
+     data: {}
+   })
+ export default Mock

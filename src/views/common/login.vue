@@ -61,7 +61,7 @@ export default {
             }
           }).then(({data}) => {
             if(data && data.code == 0){
-              window.alert(data);
+              window.alert("login sucess");
             }else{
               window.alert('test2');
             }
