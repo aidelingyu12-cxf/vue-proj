@@ -1,22 +1,23 @@
 <template>
   <div>
     <template>
-      <nav />
-      <sideBbar />
-      <content />
+      <navBar/>
+      <sideBbar/>
+      <content/>
     </template>
   </div>
 </template>
 
 <script>
 import content from './common/content'
-import nav from './common/nav'
+import navBar from './common/nav-bar'
 import sideBbar from './common/side-bar'
 export default {
-  name: 'main',
+  name: 'mainModule',
   components: {
-    Content
-
+    navBar,
+    sideBbar,
+    content
   }
 }
 </script>
